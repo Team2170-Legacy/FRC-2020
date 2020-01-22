@@ -13,7 +13,8 @@
 #define OI_H
 
 #include "frc/WPILib.h"
-#include "GenericHID.h"
+#include "frc/GenericHID.h"
+#include <frc2/CommandBase.h>
 
 class OI {
 private:
