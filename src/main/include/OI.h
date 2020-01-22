@@ -23,8 +23,6 @@ private:
 	std::shared_ptr<frc::XboxController> driverJoystick;
 	std::shared_ptr<frc::XboxController> operatorJoystick;
 	std::shared_ptr<frc::JoystickButton> joystickDriverButtonVisionLock;
-
-	std::shared_ptr<frc::JoystickButton> joystickButtonOuttake;
 	std::shared_ptr<frc::JoystickButton> joystickButtonIntake;
 
 	std::shared_ptr<frc::JoystickButton> joystickDriverButtonForward;
