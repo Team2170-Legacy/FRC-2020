@@ -5,25 +5,25 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-#include "Commands/LowerIntake.h"
+#include "Commands/TeleopIntake.h"
 
-LowerIntake::LowerIntake() {
+TeleopIntake::TeleopIntake() {
   // Use Requires() here to declare subsystem dependencies
   // eg. Requires(Robot::chassis.get());
 }
 
 // Called just before this Command runs the first time
-void LowerIntake::Initialize() {}
+void TeleopIntake::Initialize() {}
 
 // Called repeatedly when this Command is scheduled to run
-void LowerIntake::Execute() {}
+void TeleopIntake::Execute() {}
 
 // Make this return true when this Command no longer needs to run execute()
-bool LowerIntake::IsFinished() { return false; }
+bool TeleopIntake::IsFinished() { return false; }
 
 // Called once after isFinished returns true
-void LowerIntake::End() {}
+void TeleopIntake::End() {}
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
-void LowerIntake::Interrupted() {}
+void TeleopIntake::Interrupted() {}

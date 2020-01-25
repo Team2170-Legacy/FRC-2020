@@ -64,12 +64,3 @@ std::shared_ptr<frc::XboxController> OI::getDriverJoystick() {
 std::shared_ptr<frc::XboxController> OI::getOperatorJoystick() {
    return operatorJoystick;
 }
-
-/**
- * @brief Get the right driver joystick pointer
- * 
- * @return std::shared_ptr<frc::Joystick> 
- */
-std::shared_ptr<frc::XboxController> OI::getDriverJoystickRight() {
-   return driverJoystickRight;
-}

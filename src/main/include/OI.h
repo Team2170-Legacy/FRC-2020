@@ -13,8 +13,6 @@
 #define OI_H
 
 #include "frc/WPILib.h"
-#include "frc/GenericHID.h"
-#include <frc2/CommandBase.h>
 
 class OI {
 private:
@@ -33,10 +31,7 @@ private:
 	std::shared_ptr<frc::JoystickButton> operatorDriverOverrideReverse;
 	std::shared_ptr<frc::JoystickButton> operatorDriverOverrideTR;
 	std::shared_ptr<frc::JoystickButton> operatorDriverOverrideTL; 
-
-	public static final GenericHID.Hand kLeft;
-	public static final GenericHID.Hand kRight;
-	//four buttons that move the robot at constant velocity. 
+	//four buttons that move the robot at constant velocity.
 
 public:
 	OI();

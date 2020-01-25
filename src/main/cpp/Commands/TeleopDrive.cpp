@@ -47,8 +47,8 @@ void TeleopDrive::Execute()
     auto table = inst.GetTable("VisionTable");
     table->GetEntry("automove").SetBoolean(false);
 
-    double xAxis = Robot::oi->getDriverJoystick()->GetX();
-    double yAxis = Robot::oi->getDriverJoystick()->GetY();
+    double xAxis = Robot::oi->getDriverJoystick()->GetRawAxis(1);
+    double yAxis = Robot::oi->getDriverJoystick()->GetRawAxis(4);
 
     switch (driveMode)
     {
@@ -57,10 +57,10 @@ void TeleopDrive::Execute()
         Robot::driveTrain->VelocityArcade(-yAxis, -xAxis);
         break;
     case DriveMode::tankDriveVelocity:
-        Robot::driveTrain->VelocityTankDrive(-yAxis, -Robot::oi->getDriverJoystickRight()->GetY());
+        // Robot::driveTrain->VelocityTankDrive(-yAxis, -Robot::oi->getDriverJoystickRight()->GetRawAxis(1));
         break;
     case DriveMode::tankDriveVoltage:
-        Robot::driveTrain->TankDrive(-yAxis, -Robot::oi->getDriverJoystickRight()->GetY());
+        // Robot::driveTrain->TankDrive(-yAxis, -Robot::oi->getDriverJoystickRight()->GetRawAxis(4s));
         break;
     case DriveMode::arcadeDriveVoltage:
         Robot::driveTrain->ArcadeDrive(yAxis, xAxis);
